@@ -15,7 +15,7 @@ import { MovieService } from '../service/movie.service';
 
 export class ComponentsComponent implements OnInit {
     m:movie;
-    avg:number;
+    avg:number=0;
     
     ngOnInit() {
        this.m=new movie();
