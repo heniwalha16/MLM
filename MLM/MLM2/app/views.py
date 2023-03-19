@@ -1,5 +1,9 @@
 from django.shortcuts import render
-
+import fastai
+from fastai import *
+from fastai.text import *
+from fastai.callback import *
+import transformers
 # Create your views here.
 @csrf_exempt
 @api_view(('POST',))
