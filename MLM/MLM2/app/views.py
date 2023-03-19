@@ -166,7 +166,7 @@ def Scrapping(request):
             # Increment the count of reviews
             count += 1
 
-        learner = load_learner("C:/Users/user/Downloads", file = 'transformer.pkl')
+        learner = load_learner("C:/Users/Heni/Downloads", file = 'transformer.pkl')
 
         MODEL_CLASSES = {
     'bert': (BertForSequenceClassification, BertTokenizer, BertConfig),
