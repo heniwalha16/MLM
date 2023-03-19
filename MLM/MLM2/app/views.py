@@ -56,4 +56,5 @@ def Scrapping(request):
             
             # Increment the count of reviews
             count += 1
+        
     return count
