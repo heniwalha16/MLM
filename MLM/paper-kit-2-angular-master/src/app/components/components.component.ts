@@ -15,9 +15,11 @@ import { MovieService } from '../service/movie.service';
 
 export class ComponentsComponent implements OnInit {
     m:movie;
-
+    avg:number;
+    
     ngOnInit() {
        this.m=new movie();
+       
     }
     constructor( private movieService : MovieService,  private http: HttpClient){
         
@@ -26,7 +28,7 @@ export class ComponentsComponent implements OnInit {
     
     
     async senddata() {
-        this.movieService.postParametre(this.m);
+        this.movieService.postParametre(this.m).subscribe((res:any)=>{this.avg=res.average;});
         
     };
 }
